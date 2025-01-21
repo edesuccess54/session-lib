@@ -1,32 +1,32 @@
 import { BackgroundColor } from "./backgroundColor";
 import { CheckPathname } from "./checkPathname";
-// import {
-//   encrypt,
-//   decrypt,
-//   obfuscateValues,
-//   deobfuscateValues,
-// } from "./encryption";
+import {
+  Encrypt,
+  Decrypt,
+  ObfuscateValues,
+  DeobfuscateValues,
+} from "./encryption";
 import { ExtractDocumentType } from "./extractDocumentType";
 import { FormatSessionData, UserDataProps } from "./formatSessionData";
 import { GenerateRandomKey } from "./generateRandomKey";
 import { HandleEnterKeyDown } from "./handleEnterKeyDown";
-import { HandleOTPKeyDown, handleInputChange, handlePaste } from "./otpUtils";
+import { HandleOTPKeyDown, HandleInputChange, HandlePaste } from "./otpUtils";
 import { GetStatusClasses, GetStatusText, Status } from "./statusLabel";
 
 export {
-  // encrypt,
-  // decrypt,
-  handlePaste,
+  Encrypt,
+  Decrypt,
+  HandlePaste,
   GetStatusText,
   CheckPathname,
-  // obfuscateValues,
+  ObfuscateValues,
   BackgroundColor,
   GetStatusClasses,
   HandleOTPKeyDown,
-  // deobfuscateValues,
+  DeobfuscateValues,
   FormatSessionData,
   GenerateRandomKey,
-  handleInputChange,
+  HandleInputChange,
   HandleEnterKeyDown,
   ExtractDocumentType,
   type Status,

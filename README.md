@@ -1,50 +1,163 @@
-# React + TypeScript + Vite
+# Candour Utilities Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A utility library with functions for string manipulation, date formatting, number conversion, and more.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+Install the library using npm or yarn:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install @candour-utils/react
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn add @candour-utils/react
 ```
+
+# Examples of How to Use Functions from the Candour Utilities Library
+
+---
+
+## 1. `CapitalizeFirstLetter`
+
+**Description**: Capitalizes the first letter of a string.
+
+### Example Usage:
+
+```typescript
+import { CapitalizeFirstLetter } from "@candour-utils/react";
+
+const text = "hello world";
+const capitalized = CapitalizeFirstLetter(text);
+
+console.log(capitalized); // Output: "Hello world"
+```
+
+## 2. `FormatDate`
+
+**Description**: Formats a date string into the format DD-MMM-YYYY.
+
+### Example Usage:
+
+```typescript
+import { FormatDate } from "@candour-utils/react";
+
+const date = "2025-01-21";
+const formattedDate = FormatDate(date);
+
+console.log(formattedDate); // Output: "21-Jan-2025"
+```
+
+## 3. `FormatDateWithTime`
+
+**Description**: Formats a date string into the format DD-MMM-YYYY, HH:MM AM/PM.
+
+### Example Usage:
+
+```typescript
+import { FormatDateWithTime } from "@candour-utils/react";
+
+const date = "2025-01-21T14:30:00";
+const formattedDateWithTime = FormatDateWithTime(date);
+
+console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
+```
+
+---
+
+# Conversion Functions
+
+**Conversion** utility functions:
+
+1. **CapitalizeFirstLetter**  
+   Capitalizes the first letter of a given string.
+
+2. **ConvertDateWithTimeStamp**  
+   Converts a timestamp into a formatted date string.
+
+3. **ConvertNumberToKFormat**  
+   Converts large numbers to a shortened "K" format (e.g., `1200` → `1.2K`).
+
+4. **FormatDate**  
+   Formats a date object or string into a human-readable date.
+
+5. **FormatDateWithTime**  
+   Formats a date object or string, including the time.
+
+6. **FormatDocumentType**  
+   Converts a document type code to a human-readable string.
+
+7. **FormatNumberWithCommas**  
+   Adds commas to a number for better readability (e.g., `1000` → `1,000`).
+
+8. **GetOrdinalWord**  
+   Converts a number into its ordinal word form (e.g., `1` → `First`).
+
+9. **HexToRgba**  
+   Converts a hexadecimal color code to an RGBA format.
+
+10. **MaskEmail**  
+    Masks an email address, hiding part of it (e.g., `user@example.com` → `u***@example.com`).
+
+11. **SterilizeNumberInputs**  
+    Removes invalid characters from number inputs.
+
+12. **UserInitials**  
+    Extracts the initials from a user's full name.
+
+# Helpers Functions
+
+**Helpers** utility functions:
+
+1. **BackgroundColor**  
+   Provides utility for determining or managing background colors.
+
+2. **CheckPathname**  
+   Checks if a given pathname matches specific patterns or criteria.
+
+3. **Encrypt**  
+   Encrypts sensitive data for secure storage or transfer.
+
+4. **Decrypt**  
+   Decrypts previously encrypted data.
+
+5. **ObfuscateValues**  
+   Obfuscates sensitive values to prevent unauthorized access.
+
+6. **DeobfuscateValues**  
+   Reverses the obfuscation process to retrieve the original values.
+
+7. **ExtractDocumentType**  
+   Extracts the document type from a given input.
+
+8. **FormatSessionData**  
+   Formats session-related data into a structured object.
+
+9. **GenerateRandomKey**  
+   Generates a random key for various use cases.
+
+10. **HandleEnterKeyDown**  
+    Handles the `Enter` key press for specific user input scenarios.
+
+11. **HandleOTPKeyDown**  
+    Manages key events for one-time password (OTP) inputs.
+
+12. **HandleInputChange**  
+    Handles changes in input fields, especially for OTP-like input systems.
+
+13. **HandlePaste**  
+    Handles paste events for input fields, ensuring proper formatting and data.
+
+14. **GetStatusClasses**  
+    Provides utility for retrieving status-specific CSS classes.
+
+15. **GetStatusText**  
+    Retrieves the text representation of a specific status.
+
+16. **Status**  
+    A type definition for status labels.
+
+17. **UserDataProps**  
+    A type definition for user data properties.
