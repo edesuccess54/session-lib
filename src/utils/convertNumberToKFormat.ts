@@ -1,4 +1,4 @@
-export const ConvertNumberToKFormat = (number: number): string | number => {
+export const convertNumberToKFormat = (number: number): string | number => {
   const k = 1000;
 
   // Check if the absolute value of the number is greater than or equal to 1000

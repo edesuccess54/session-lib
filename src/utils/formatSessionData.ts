@@ -26,7 +26,7 @@ export interface UserDataProps {
   };
 }
 
-export const FormatSessionData = (userData: UserDataProps) => {
+export const formatSessionData = (userData: UserDataProps) => {
   const {
     uuid,
     role,

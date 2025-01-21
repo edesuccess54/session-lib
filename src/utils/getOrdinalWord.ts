@@ -1,4 +1,4 @@
-export function GetOrdinalWord(n: number): string {
+export function getOrdinalWord(n: number): string {
   const basic = [
     "Zero",
     "First",

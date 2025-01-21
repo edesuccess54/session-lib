@@ -1,6 +1,6 @@
 import { CaseType, DocumentTypes } from "./types";
 
-export const FormatDocumentType = (
+export const formatDocumentType = (
   documentType: DocumentTypes,
   caseType: CaseType
 ): string => {

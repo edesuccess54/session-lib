@@ -1,4 +1,4 @@
-export const MaskEmail = (email: string | undefined): string => {
+export const maskEmail = (email: string | undefined): string => {
   if (email) {
     const [localPart, domainPart] = email.split("@");
 

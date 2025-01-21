@@ -1,4 +1,4 @@
-export function TruncateToTwoDecimals(number: number): number {
+export function truncateToTwoDecimals(number: number): number {
   // Check if the number is an integer (no decimals), return as is if true
   if (Number.isInteger(number)) {
     return number;
@@ -7,11 +7,11 @@ export function TruncateToTwoDecimals(number: number): number {
   return Math.floor(number * 100) / 100;
 }
 
-export const FormatNumberWithCommas = (number: number | undefined): string => {
+export const formatNumberWithCommas = (number: number | undefined): string => {
   if (!number || typeof number === "string") return "0.00";
 
   // Ensure the number is formatted to two decimal places
-  const fixedNumber = TruncateToTwoDecimals(Number(number));
+  const fixedNumber = truncateToTwoDecimals(Number(number));
 
   // Convert the number to a string for easier manipulation
   const parts = String(fixedNumber).split(".");
