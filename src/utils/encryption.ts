@@ -14,7 +14,7 @@ const base64Key =
 const ivLength = 12; // AES-GCM standard IV length (12 bytes)
 
 // Helper to derive the encryption key
-async function GetKey() {
+async function getKey() {
   const keyBuffer = Buffer.from(base64Key, "base64");
   return await crypto.subtle.importKey(
     "raw",
@@ -29,8 +29,8 @@ async function GetKey() {
 }
 
 // Encrypt function using Web Crypto API
-export async function Encrypt(value: string): Promise<string> {
-  const key = await GetKey();
+export async function encrypt(value: string): Promise<string> {
+  const key = await getKey();
   const iv = crypto.getRandomValues(new Uint8Array(ivLength));
   const encrypted = await crypto.subtle.encrypt(
     {
@@ -49,10 +49,10 @@ export async function Encrypt(value: string): Promise<string> {
 }
 
 // Decrypt function using Web Crypto API
-export async function Decrypt(encryptedValue: string): Promise<string> {
+export async function decrypt(encryptedValue: string): Promise<string> {
   const [ivBase64, encryptedBase64] = encryptedValue.split(":");
 
-  const key = await GetKey();
+  const key = await getKey();
 
   const iv = Buffer.from(ivBase64, "base64");
   const encrypted = Buffer.from(encryptedBase64, "base64");
@@ -75,7 +75,7 @@ export async function Decrypt(encryptedValue: string): Promise<string> {
 }
 
 // Encode values
-export function ObfuscateValues(value: string): string {
+export function obfuscateValues(value: string): string {
   const base64Encoded = Buffer.from(value).toString("base64");
 
   // Then, convert the base64 string to hex to further increase length
@@ -88,7 +88,7 @@ export function ObfuscateValues(value: string): string {
 }
 
 // Decode values
-export function DeobfuscateValues(obfuscatedValue: string): string {
+export function deobfuscateValues(obfuscatedValue: string): string {
   // return Buffer.from(obfuscatedValue, 'base64').toString('utf8');
 
   // Remove the last 8 random characters

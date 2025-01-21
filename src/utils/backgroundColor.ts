@@ -1,4 +1,4 @@
-export const BackgroundColor = ({
+export const backgroundColor = ({
   body,
   text,
   brand,

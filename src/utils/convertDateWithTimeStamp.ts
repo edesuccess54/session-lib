@@ -1,4 +1,4 @@
-export const ConvertDateWithTimeStamp = (date: string | Date): string => {
+export const convertDateWithTimeStamp = (date: string | Date): string => {
   if (!date) return "";
 
   // Parse dateIssued and dueDate strings to Date objects

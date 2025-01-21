@@ -4,7 +4,7 @@ type GeneratedKeys = {
   suffixKey: string;
 };
 
-function GenerateRandomAlphabet(): string {
+function generateRandomAlphabet(): string {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   return chars.charAt(Math.floor(Math.random() * chars.length));
 }
@@ -20,11 +20,11 @@ function GenerateRandomSpecialChar(excludeDash: boolean = true): string {
   return specialChars.charAt(Math.floor(Math.random() * specialChars.length));
 }
 
-function GenerateCharFromFormat(char: string): string {
+function generateCharFromFormat(char: string): string {
   if (char === "-") {
     return "-";
   } else if (/[a-zA-Z]/.test(char)) {
-    return GenerateRandomAlphabet();
+    return generateRandomAlphabet();
   } else if (/[0-9]/.test(char)) {
     return GenerateRandomNumber();
   } else {
@@ -32,7 +32,7 @@ function GenerateCharFromFormat(char: string): string {
   }
 }
 
-export function GenerateRandomKey(): GeneratedKeys {
+export function generateRandomKey(): GeneratedKeys {
   const baseKeyFormat = "3Hd48?-J8L3^y-&Hw82n-";
   const suffixKeyFormat = "-&9Ia34-m2%O1B-Y0c@p8";
 
@@ -41,12 +41,12 @@ export function GenerateRandomKey(): GeneratedKeys {
 
   // Generate baseKey
   for (let i = 0; i < baseKeyFormat.length; i++) {
-    baseKey += GenerateCharFromFormat(baseKeyFormat[i]);
+    baseKey += generateCharFromFormat(baseKeyFormat[i]);
   }
 
   // Generate suffixKey
   for (let i = 0; i < suffixKeyFormat.length; i++) {
-    suffixKey += GenerateCharFromFormat(suffixKeyFormat[i]);
+    suffixKey += generateCharFromFormat(suffixKeyFormat[i]);
   }
 
   return { baseKey, suffixKey };

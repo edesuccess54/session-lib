@@ -1,4 +1,4 @@
-export const HandleEnterKeyDown = (
+export const handleEnterKeyDown = (
   event: React.KeyboardEvent,
   callback: () => void
 ) => {

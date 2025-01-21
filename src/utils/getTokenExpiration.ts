@@ -9,7 +9,7 @@ type TokenExpiration = {
 };
 
 // Helper function to decode a JWT and get its expiration time in seconds
-export function GetTokenExpiration(token: string): number {
+export function getTokenExpiration(token: string): number {
   if (!token) {
     return 0;
   }
@@ -27,7 +27,7 @@ export function GetTokenExpiration(token: string): number {
 }
 
 // Helper function to convert seconds into days, hours, minutes, and seconds
-export function FormatTokenExpiration(seconds: number): TokenExpiration {
+export function formatTokenExpiration(seconds: number): TokenExpiration {
   const days = Math.floor(seconds / (24 * 3600));
   seconds %= 24 * 3600;
   const hours = Math.floor(seconds / 3600);

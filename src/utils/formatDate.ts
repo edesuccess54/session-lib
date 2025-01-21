@@ -1,4 +1,4 @@
-export const FormatDate = (dateString: string): string => {
+export const formatDate = (dateString: string): string => {
   const options: Intl.DateTimeFormatOptions = {
     day: "2-digit",
     month: "short",
@@ -8,7 +8,7 @@ export const FormatDate = (dateString: string): string => {
   return date.toLocaleDateString("en-GB", options);
 };
 
-export const FormatDateWithTime = (dateString: string): string => {
+export const formatDateWithTime = (dateString: string): string => {
   const options: Intl.DateTimeFormatOptions = {
     day: "2-digit",
     month: "short",

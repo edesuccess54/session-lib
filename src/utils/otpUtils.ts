@@ -1,4 +1,4 @@
-export const HandleOTPKeyDown = (
+export const handleOTPKeyDown = (
   index: number,
   otpInputs: Array<string>,
   setOtpInputs: React.Dispatch<React.SetStateAction<Array<string>>>,
@@ -27,7 +27,7 @@ export const HandleOTPKeyDown = (
   }
 };
 
-export const HandleInputChange = (
+export const handleInputChange = (
   index: number,
   value: string,
   otpInputs: Array<string>,
@@ -55,7 +55,7 @@ export const HandleInputChange = (
   }
 };
 
-export const HandlePaste = (
+export const handlePaste = (
   e: React.ClipboardEvent<HTMLInputElement>,
   setOtpInputs: React.Dispatch<React.SetStateAction<Array<string>>>,
   inputRefs: React.RefObject<Array<HTMLInputElement | null>>
