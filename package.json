@@ -1,9 +1,9 @@
 {
   "name": "@candourorg/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Jazz Dev",
   "license": "ISC",
-  "description": "Collection of Candour utilities.",
+  "description": "Candour utilities.",
   "type": "module",
   "main": "eslint.config.js",
   "module": "dist/index.esm.js",
@@ -11,8 +11,6 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "bun clean && rollup -c",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "files": [
