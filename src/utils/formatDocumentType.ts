@@ -1,4 +1,4 @@
-import { CaseType, DocumentTypes } from "../types";
+import { CaseType, DocumentTypes } from "./types";
 
 export const FormatDocumentType = (
   documentType: DocumentTypes,
