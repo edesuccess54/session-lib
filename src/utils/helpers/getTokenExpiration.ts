@@ -1,4 +1,4 @@
-import { Buffer } from 'buffer'; // Make sure to import Buffer if it's not globally available
+import { Buffer } from "buffer"; // Make sure to import Buffer if it's not globally available
 
 // Type representing the return value of formatTokenExpiration function
 type TokenExpiration = {
@@ -9,16 +9,16 @@ type TokenExpiration = {
 };
 
 // Helper function to decode a JWT and get its expiration time in seconds
-export function getTokenExpiration(token: string): number {
+export function GetTokenExpiration(token: string): number {
   if (!token) {
     return 0;
   }
 
-  const base64Url = token.split('.')[1]; // Get the payload part of the token
+  const base64Url = token.split(".")[1]; // Get the payload part of the token
   if (!base64Url) return 0; // Ensure there's a payload part to decode
 
-  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-  const payload = JSON.parse(Buffer.from(base64, 'base64').toString());
+  const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+  const payload = JSON.parse(Buffer.from(base64, "base64").toString());
 
   const exp = payload.exp; // Expiration time in Unix timestamp (seconds)
   const now = Math.floor(Date.now() / 1000); // Current time in Unix timestamp (seconds)
@@ -27,7 +27,7 @@ export function getTokenExpiration(token: string): number {
 }
 
 // Helper function to convert seconds into days, hours, minutes, and seconds
-export function formatTokenExpiration(seconds: number): TokenExpiration {
+export function FormatTokenExpiration(seconds: number): TokenExpiration {
   const days = Math.floor(seconds / (24 * 3600));
   seconds %= 24 * 3600;
   const hours = Math.floor(seconds / 3600);

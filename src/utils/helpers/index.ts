@@ -1,34 +1,34 @@
-import { backgroundColor } from "./backgroundColor";
-import { checkPathname } from "./checkPathname";
+import { BackgroundColor } from "./backgroundColor";
+import { CheckPathname } from "./checkPathname";
 // import {
 //   encrypt,
 //   decrypt,
 //   obfuscateValues,
 //   deobfuscateValues,
 // } from "./encryption";
-import { extractDocumentType } from "./extractDocumentType";
-import { formatSessionData, UserDataProps } from "./formatSessionData";
-import { generateRandomKey } from "./generateRandomKey";
-import { handleEnterKeyDown } from "./handleEnterKeyDown";
-import { handleOTPKeyDown, handleInputChange, handlePaste } from "./otpUtils";
-import { getStatusClasses, getStatusText, Status } from "./statusLabel";
+import { ExtractDocumentType } from "./extractDocumentType";
+import { FormatSessionData, UserDataProps } from "./formatSessionData";
+import { GenerateRandomKey } from "./generateRandomKey";
+import { HandleEnterKeyDown } from "./handleEnterKeyDown";
+import { HandleOTPKeyDown, handleInputChange, handlePaste } from "./otpUtils";
+import { GetStatusClasses, GetStatusText, Status } from "./statusLabel";
 
 export {
   // encrypt,
   // decrypt,
   handlePaste,
-  getStatusText,
-  checkPathname,
+  GetStatusText,
+  CheckPathname,
   // obfuscateValues,
-  backgroundColor,
-  getStatusClasses,
-  handleOTPKeyDown,
+  BackgroundColor,
+  GetStatusClasses,
+  HandleOTPKeyDown,
   // deobfuscateValues,
-  formatSessionData,
-  generateRandomKey,
+  FormatSessionData,
+  GenerateRandomKey,
   handleInputChange,
-  handleEnterKeyDown,
-  extractDocumentType,
+  HandleEnterKeyDown,
+  ExtractDocumentType,
   type Status,
   type UserDataProps,
 };

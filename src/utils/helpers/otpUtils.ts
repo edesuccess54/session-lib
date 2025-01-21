@@ -1,4 +1,4 @@
-export const handleOTPKeyDown = (
+export const HandleOTPKeyDown = (
   index: number,
   otpInputs: Array<string>,
   setOtpInputs: React.Dispatch<React.SetStateAction<Array<string>>>,

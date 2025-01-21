@@ -1,26 +1,26 @@
-import { capitalizeFirstLetter } from "./capitalizeFirstLetter";
-import { convertDateWithTimeStamp } from "./convertDateWithTimeStamp";
-import { convertNumberToKFormat } from "./convertNumberToKFormat";
-import { formatDate, formatDateWithTime } from "./formatDate";
-import { formatDocumentType } from "./formatDocumentType";
-import { formatNumberWithCommas } from "./formatNumberWithCommas";
-import { getOrdinalWord } from "./getOrdinalWord";
-import { hexToRgba } from "./hexToRgba";
-import { maskEmail } from "./maskEmail";
-import { sterilizeNumberInputs } from "./sterilizeNumberInputs";
-import { userInitials } from "./userInitials";
+import { CapitalizeFirstLetter } from "./capitalizeFirstLetter";
+import { ConvertDateWithTimeStamp } from "./convertDateWithTimeStamp";
+import { ConvertNumberToKFormat } from "./convertNumberToKFormat";
+import { FormatDate, FormatDateWithTime } from "./formatDate";
+import { FormatDocumentType } from "./formatDocumentType";
+import { FormatNumberWithCommas } from "./formatNumberWithCommas";
+import { GetOrdinalWord } from "./getOrdinalWord";
+import { HexToRgba } from "./hexToRgba";
+import { MaskEmail } from "./maskEmail";
+import { SterilizeNumberInputs } from "./sterilizeNumberInputs";
+import { UserInitials } from "./userInitials";
 
 export {
-  hexToRgba,
-  maskEmail,
-  formatDate,
-  userInitials,
-  getOrdinalWord,
-  formatDateWithTime,
-  formatDocumentType,
-  sterilizeNumberInputs,
-  capitalizeFirstLetter,
-  formatNumberWithCommas,
-  convertNumberToKFormat,
-  convertDateWithTimeStamp,
+  HexToRgba,
+  MaskEmail,
+  FormatDate,
+  UserInitials,
+  GetOrdinalWord,
+  FormatDateWithTime,
+  FormatDocumentType,
+  SterilizeNumberInputs,
+  CapitalizeFirstLetter,
+  FormatNumberWithCommas,
+  ConvertNumberToKFormat,
+  ConvertDateWithTimeStamp,
 };

@@ -19,7 +19,7 @@ export type Status =
   | "administrative expenses"
   | "profit & loss";
 
-export const getStatusClasses = (status: Status): string => {
+export const GetStatusClasses = (status: Status): string => {
   const statusClasses: Record<Status, string> = {
     none: "",
     active:
@@ -54,7 +54,7 @@ export const getStatusClasses = (status: Status): string => {
   return statusClasses[status] || "Unknown Status";
 };
 
-export const getStatusText = (status: Status): string => {
+export const GetStatusText = (status: Status): string => {
   const statusTexts: Record<Status, string> = {
     none: "",
     paid: "Paid",

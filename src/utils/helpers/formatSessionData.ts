@@ -26,7 +26,7 @@ export interface UserDataProps {
   };
 }
 
-export const formatSessionData = (userData: UserDataProps) => {
+export const FormatSessionData = (userData: UserDataProps) => {
   const {
     uuid,
     role,
@@ -61,29 +61,29 @@ export const formatSessionData = (userData: UserDataProps) => {
     lastName,
     firstName,
     authenticator,
-    logo: logo || '',
-    font: font || '',
+    logo: logo || "",
+    font: font || "",
     authenticatorBackup,
     isAuthenticated: true,
     adminId: adminId || 0,
-    address: address || '',
-    bgColor: bgColor || '',
-    country: country || '',
-    sortCode: sortCode || '',
-    location: location || '',
-    bankName: bankName || '',
-    currency: currency || '',
+    address: address || "",
+    bgColor: bgColor || "",
+    country: country || "",
+    sortCode: sortCode || "",
+    location: location || "",
+    bankName: bankName || "",
+    currency: currency || "",
     showGetStarted: loggedIn === 1,
     showOnboarding: loggedIn === 1,
-    businessName: businessName || '',
-    businessNumber: businessNumber || '',
-    bankAccountName: bankAccountName || '',
-    bankAccountNumber: bankAccountNumber || '',
+    businessName: businessName || "",
+    businessNumber: businessNumber || "",
+    bankAccountName: bankAccountName || "",
+    bankAccountNumber: bankAccountNumber || "",
   };
 
   const filteredUserData = Object.fromEntries(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    Object.entries(userDataForRedis).filter(([_, value]) => value != null),
+    Object.entries(userDataForRedis).filter(([_, value]) => value != null)
   );
 
   return filteredUserData;

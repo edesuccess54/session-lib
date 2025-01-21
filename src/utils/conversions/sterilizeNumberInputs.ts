@@ -1,4 +1,4 @@
-export const sterilizeNumberInputs = (
+export const SterilizeNumberInputs = (
   e: React.ChangeEvent<HTMLInputElement>,
   setFieldValue: (field: string, value: string) => void,
   fieldName: string
