@@ -1,7 +1,7 @@
 {
-  "name": "@candour-utils/react",
-  "version": "1.0.0",
-  "author": "Speedy",
+  "name": "@candourorg/utils",
+  "version": "1.0.1",
+  "author": "Jazz Dev",
   "license": "ISC",
   "description": "Collection of Candour utilities.",
   "type": "module",
