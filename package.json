@@ -1,6 +1,6 @@
 {
   "name": "@candour-utils/react",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Speedy",
   "license": "ISC",
   "description": "Collection of Candour utilities.",
