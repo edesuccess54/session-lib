@@ -17,6 +17,7 @@ import { convertDateWithTimeStamp } from "./convertDateWithTimeStamp";
 import { formatSessionData, UserDataProps } from "./formatSessionData";
 import { getStatusClasses, getStatusText, Status } from "./statusLabel";
 import { handleOTPKeyDown, handleInputChange, handlePaste } from "./otpUtils";
+import { getPlanClasses, getPlanText } from "./planLabel";
 
 import {
   encrypt,
@@ -53,6 +54,8 @@ export {
   formatNumberWithCommas,
   convertNumberToKFormat,
   convertDateWithTimeStamp,
+  getPlanClasses,
+  getPlanText,
   type Status,
   type UserDataProps,
 };
