@@ -12,7 +12,7 @@ import { formatDate, formatDateWithTime } from "./formatDate";
 import { sterilizeNumberInputs } from "./sterilizeNumberInputs";
 import { capitalizeFirstLetter } from "./capitalizeFirstLetter";
 import { convertNumberToKFormat } from "./convertNumberToKFormat";
-import { formatNumberWithCommas } from "./formatNumberWithCommas";
+import { formatNumberWithCommas, truncateToTwoDecimals } from "./formatNumberWithCommas";
 import { convertDateWithTimeStamp } from "./convertDateWithTimeStamp";
 import { formatSessionData, UserDataProps } from "./formatSessionData";
 import { getStatusClasses, getStatusText, Status } from "./statusLabel";
@@ -52,6 +52,7 @@ export {
   sterilizeNumberInputs,
   capitalizeFirstLetter,
   formatNumberWithCommas,
+  truncateToTwoDecimals,
   convertNumberToKFormat,
   convertDateWithTimeStamp,
   getPlanClasses,
