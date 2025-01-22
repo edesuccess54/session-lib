@@ -20,6 +20,11 @@ import { handleOTPKeyDown, handleInputChange, handlePaste } from "./otpUtils";
 import { getPlanClasses, getPlanText } from "./planLabel";
 import { formatSlugName } from "./formatSlugName";
 import { formatAadminSessionData } from "./formatAadminSessionData";
+import { createInitials } from "./createInitials";
+import { formatChartsNumber } from "./formatChartsNumber";
+import { getTokenExpiration, formatTokenExpiration } from "./getTokenExpiration";
+
+
 
 import {
   encrypt,
@@ -61,5 +66,9 @@ export {
   getPlanText,
   formatSlugName,
   formatAadminSessionData,
+  createInitials,
+  formatChartsNumber,
+  getTokenExpiration,
+  formatTokenExpiration,
   type Status,
 };
