@@ -107,6 +107,9 @@ console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
 12. **UserInitials**  
     Extracts the initials from a user's full name.
 
+13. **truncateToTwoDecimals**
+   formats a floating point number to two decimal places
+
 # Helpers Functions
 
 **Helpers** utility functions:
@@ -161,3 +164,7 @@ console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
 
 17. **UserDataProps**  
     A type definition for user data properties.
+
+18. **formatSlugName**
+   formats slug name and replace whitespace with -
+
