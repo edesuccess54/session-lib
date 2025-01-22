@@ -168,3 +168,6 @@ console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
 18. **formatSlugName**
    formats slug name and replace whitespace with -
 
+19. **FormatAdminSessionData**  
+   Formats admin session-related data into a structured object.
+

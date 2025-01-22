@@ -14,11 +14,12 @@ import { capitalizeFirstLetter } from "./capitalizeFirstLetter";
 import { convertNumberToKFormat } from "./convertNumberToKFormat";
 import { formatNumberWithCommas, truncateToTwoDecimals } from "./formatNumberWithCommas";
 import { convertDateWithTimeStamp } from "./convertDateWithTimeStamp";
-import { formatSessionData, UserDataProps } from "./formatSessionData";
+import { formatSessionData } from "./formatSessionData";
 import { getStatusClasses, getStatusText, Status } from "./statusLabel";
 import { handleOTPKeyDown, handleInputChange, handlePaste } from "./otpUtils";
 import { getPlanClasses, getPlanText } from "./planLabel";
 import { formatSlugName } from "./formatSlugName";
+import { formatAadminSessionData } from "./formatAadminSessionData";
 
 import {
   encrypt,
@@ -59,6 +60,6 @@ export {
   getPlanClasses,
   getPlanText,
   formatSlugName,
+  formatAadminSessionData,
   type Status,
-  type UserDataProps,
 };
