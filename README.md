@@ -170,3 +170,18 @@ console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
 33. **FormatAdminSessionData**
    Formats admin session-related data into a structured object.
 
+20. **formatChartsNumber**
+   Formats chart number
+
+21 **createInitials**
+   This function creates business name initial
+
+22 **getTokenExpiration**
+   Helper function to decode a JWT and get its expiration time in seconds
+
+
+23 **formatTokenExpiration**
+   Helper function to convert seconds into days, hours, minutes, and seconds
+
+
+

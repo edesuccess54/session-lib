@@ -3,6 +3,7 @@ import { maskEmail } from './maskEmail';
 import { truncateText } from './truncateText';
 import { userInitials } from './userInitials';
 import { checkPathname } from './checkPathname';
+import { createInitials } from "./createInitials";
 import { getOrdinalWord } from './getOrdinalWord';
 import { formatSlugName } from './formatSlugName';
 import { backgroundColor } from './backgroundColor';
@@ -10,6 +11,7 @@ import { formatSessionData } from './formatSessionData';
 import { generateRandomKey } from './generateRandomKey';
 import { getPlanClasses, getPlanText } from './planLabel';
 import { handleEnterKeyDown } from './handleEnterKeyDown';
+import { formatChartsNumber } from "./formatChartsNumber";
 import { formatDocumentType } from './formatDocumentType';
 import { extractDocumentType } from './extractDocumentType';
 import { formatDate, formatDateWithTime } from './formatDate';
@@ -20,11 +22,11 @@ import { formatAadminSessionData } from './formatAadminSessionData';
 import { convertDateWithTimeStamp } from './convertDateWithTimeStamp';
 import { getStatusClasses, getStatusText, Status } from './statusLabel';
 import { handleOTPKeyDown, handleInputChange, handlePaste } from './otpUtils';
+import { getTokenExpiration, formatTokenExpiration } from "./getTokenExpiration";
 import {
   formatNumberWithCommas,
   truncateToTwoDecimals,
 } from './formatNumberWithCommas';
-
 import {
   encrypt,
   decrypt,
@@ -66,5 +68,9 @@ export {
   getPlanText,
   formatSlugName,
   formatAadminSessionData,
+  createInitials,
+  formatChartsNumber,
+  getTokenExpiration,
+  formatTokenExpiration,
   type Status,
 };
