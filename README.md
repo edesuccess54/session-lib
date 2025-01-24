@@ -135,9 +135,6 @@ console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
 7. **ExtractDocumentType**  
    Extracts the document type from a given input.
 
-8. **FormatSessionData**  
-   Formats session-related data into a structured object.
-
 9. **GenerateRandomKey**  
    Generates a random key for various use cases.
 
@@ -168,20 +165,17 @@ console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
 18. **formatSlugName**
    formats slug name and replace whitespace with -
 
-19. **FormatAdminSessionData**  
-   Formats admin session-related data into a structured object.
-
-20. **formatChartsNumber**
+19. **formatChartsNumber**
    Formats chart number
 
-21 **createInitials**
+20. **createInitials**
    This function creates business name initial
 
-22 **getTokenExpiration**
+21. **getTokenExpiration**
    Helper function to decode a JWT and get its expiration time in seconds
 
 
-23 **formatTokenExpiration**
+22. **formatTokenExpiration**
    Helper function to convert seconds into days, hours, minutes, and seconds
 
 
