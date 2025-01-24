@@ -9,7 +9,7 @@ A utility library with functions for string manipulation, date formatting, numbe
 Install the library using npm or yarn:
 
 ```bash
-npm install @candour-utils/react
+bun add @candour-utils/react
 ```
 
 ```bash
@@ -71,98 +71,97 @@ console.log(formattedDateWithTime); // Output: "21-Jan-2025, 02:30 PM"
 
 **Conversion** utility functions:
 
-1. **CapitalizeFirstLetter**  
+1. **CapitalizeFirstLetter**
    Capitalizes the first letter of a given string.
 
-2. **ConvertDateWithTimeStamp**  
+2. **ConvertDateWithTimeStamp**
    Converts a timestamp into a formatted date string.
 
-3. **ConvertNumberToKFormat**  
+3. **ConvertNumberToKFormat**
    Converts large numbers to a shortened "K" format (e.g., `1200` → `1.2K`).
 
-4. **FormatDate**  
+4. **FormatDate**
    Formats a date object or string into a human-readable date.
 
-5. **FormatDateWithTime**  
+5. **FormatDateWithTime**
    Formats a date object or string, including the time.
 
-6. **FormatDocumentType**  
+6. **FormatDocumentType**
    Converts a document type code to a human-readable string.
 
-7. **FormatNumberWithCommas**  
+7. **FormatNumberWithCommas**
    Adds commas to a number for better readability (e.g., `1000` → `1,000`).
 
-8. **GetOrdinalWord**  
+8. **GetOrdinalWord**
    Converts a number into its ordinal word form (e.g., `1` → `First`).
 
-9. **HexToRgba**  
+9. **HexToRgba**
    Converts a hexadecimal color code to an RGBA format.
 
-10. **MaskEmail**  
+10. **MaskEmail**
     Masks an email address, hiding part of it (e.g., `user@example.com` → `u***@example.com`).
 
-11. **SterilizeNumberInputs**  
+11. **SterilizeNumberInputs**
     Removes invalid characters from number inputs.
 
-12. **UserInitials**  
+12. **UserInitials**
     Extracts the initials from a user's full name.
 
 13. **truncateToTwoDecimals**
    formats a floating point number to two decimal places
 
-# Helpers Functions
+14. **truncateText**
+   truncate text and a add '...' (e.g,. `Interdominational` -> `interdom...`).
 
-**Helpers** utility functions:
-
-1. **BackgroundColor**  
+15. **BackgroundColor**
    Provides utility for determining or managing background colors.
 
-2. **CheckPathname**  
+16. **CheckPathname**
    Checks if a given pathname matches specific patterns or criteria.
 
-3. **Encrypt**  
+17. **Encrypt**
    Encrypts sensitive data for secure storage or transfer.
 
-4. **Decrypt**  
+18. **Decrypt**
    Decrypts previously encrypted data.
 
-5. **ObfuscateValues**  
+19. **ObfuscateValues**
    Obfuscates sensitive values to prevent unauthorized access.
 
-6. **DeobfuscateValues**  
+20. **DeobfuscateValues**
    Reverses the obfuscation process to retrieve the original values.
 
-7. **ExtractDocumentType**  
+21. **ExtractDocumentType**
    Extracts the document type from a given input.
 
 9. **GenerateRandomKey**  
    Generates a random key for various use cases.
 
-10. **HandleEnterKeyDown**  
+24. **HandleEnterKeyDown**
     Handles the `Enter` key press for specific user input scenarios.
 
-11. **HandleOTPKeyDown**  
+24. **HandleOTPKeyDown**
     Manages key events for one-time password (OTP) inputs.
 
-12. **HandleInputChange**  
+26. **HandleInputChange**
     Handles changes in input fields, especially for OTP-like input systems.
 
-13. **HandlePaste**  
+27. **HandlePaste**
     Handles paste events for input fields, ensuring proper formatting and data.
 
-14. **GetStatusClasses**  
+28. **GetStatusClasses**
     Provides utility for retrieving status-specific CSS classes.
 
-15. **GetStatusText**  
+29. **GetStatusText**
     Retrieves the text representation of a specific status.
 
-16. **Status**  
+30. **Status**
     A type definition for status labels.
 
-17. **UserDataProps**  
+30. **UserDataProps**
     A type definition for user data properties.
 
-18. **formatSlugName**
+32. **formatSlugName**
    formats slug name and replace whitespace with -
 
 19. **formatChartsNumber**
