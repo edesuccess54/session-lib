@@ -29,6 +29,7 @@ export class SessionServer {
     });
 
     this.setupSocketHandlers();
+    this.startServer();
   }
 
   private setupSocketHandlers() {
@@ -47,7 +48,7 @@ export class SessionServer {
     });
   }
 
-  start() {
+  private startServer() {
     this.server.listen(this.port, () => {
       console.log(`WebSocket server running on http://localhost:${this.port}`);
     });
