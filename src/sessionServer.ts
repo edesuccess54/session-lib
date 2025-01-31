@@ -1,6 +1,6 @@
 import * as http from "http";
 import { Server as SocketIOServer, Socket } from "socket.io";
-import { Session } from "./redis";
+import { Redis } from "./redis";
 
 interface ServerOptions {
   redisUrl: string;
@@ -12,11 +12,11 @@ interface ServerOptions {
 export class SessionServer {
   private io: SocketIOServer;
   private server: http.Server;
-  private session: Session;
+  private session: Redis;
   private port: number;
 
   constructor(options: ServerOptions) {
-    this.session = new Session({
+    this.session = new Redis({
       redisUrl: options.redisUrl,
       redisToken: options.redisToken,
     });
