@@ -1,6 +1,0 @@
-src/
-node_modules/
-*.log
-.rollup.cache
-public/
-storybook-static/
