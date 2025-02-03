@@ -1,14 +1,12 @@
 import * as http from "http";
 import { Server as SocketIOServer, Socket } from "socket.io";
 import { Redis } from "./redis";
-
 interface ServerOptions {
   redisUrl: string;
   redisToken: string;
   port?: number;
   path?: string;
 }
-
 export class SessionServer {
   private io: SocketIOServer;
   private server: http.Server;
@@ -47,7 +45,6 @@ export class SessionServer {
       });
     });
   }
-
   private startServer() {
     this.server.listen(this.port, () => {
       console.log(`WebSocket server running on http://localhost:${this.port}`);
